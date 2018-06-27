@@ -136,10 +136,6 @@ vector<double>
     }
   }
 
-  if (dist == 0) {
-    dist = 1.0;
-  }
-
   if (lane == currnet_lane && direction) {
     current_lead_vehicle_speed = velocity;
   }
