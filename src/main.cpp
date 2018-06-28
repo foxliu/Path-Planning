@@ -234,7 +234,8 @@ int main() {
           vector<double> next_x_vals;
           vector<double> next_y_vals;
 
-          // TODO: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
+          // Start: define a path made up of (x,y) points that the car will visit sequentially every .02 seconds
+          /** Start Code **/
           int path_size = previous_path_x.size();
 
           for (int i = 0; i < path_size; ++i) {
@@ -355,7 +356,7 @@ int main() {
           }
 
           bp.target_vehicle_speed = ref_vel;
-          // Code End
+          /** Code End **/
 
           msgJson["next_x"] = next_x_vals;
           msgJson["next_y"] = next_y_vals;
